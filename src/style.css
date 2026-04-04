@@ -1,1 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+  --font-knewave: "Knewave", system-ui;
+}
+
+body {
+  @apply w-screen h-screen;
+}
+
+header {
+  @apply w-screen flex justify-around items-center h-fit p-6 font-knewave bg-blue-400 shadow-lg shadow-black;
+}

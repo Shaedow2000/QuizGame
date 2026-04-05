@@ -30,12 +30,12 @@ main {
   @apply font-dynapuff w-screen h-screen flex flex-col justify-center items-center gap-18 bg-linear-to-b from-yellow-200 via-green-600 to-blue-800;
 }
 
-main button {
+main a {
   @apply transition-all cursor-pointer;
 }
-main button:hover {
+main a:hover {
   @apply -translate-y-1 shadow-lg;
 }
-main button:active {
+main a:active {
   @apply translate-y-1.5 shadow-sm;
 }

@@ -4,4 +4,13 @@ function getItem(name) {
     : 0;
 }
 
-export { getItem };
+function reset() {
+  localStorage.setItem("current", 0);
+  localStorage.setItem("correct", 0);
+  localStorage.setItem("wrong", 0);
+  localStorage.setItem("wrong_quizes_indexes", []);
+
+  return;
+}
+
+export { getItem, reset };

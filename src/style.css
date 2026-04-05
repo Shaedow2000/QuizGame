@@ -71,3 +71,13 @@ main a:active {
 #menu-top-bar svg {
   @apply static;
 }
+
+#quiz-section div div button {
+  @apply w-full h-fit p-3 rounded-3xl bg-red-900 shadow-md shadow-black text-lg text-white cursor-pointer;
+}
+#quiz-section div div button:hover {
+  @apply shadow-lg -translate-y-1;
+}
+#quiz-section div div button:active {
+  @apply shadow-sm translate-y-1.5;
+}

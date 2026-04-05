@@ -50,7 +50,13 @@ main a:active {
   @apply flex flex-col justify-center items-center gap-6 mt-12;
 }
 #buttons-menu button {
-  @apply w-full h-fit p-4 flex justify-start items-center text-lg gap-6;
+  @apply transition-all cursor-pointer rounded-3xl w-full h-fit p-4 flex justify-start items-center text-lg gap-6;
+}
+#buttons-menu button:hover {
+  @apply bg-gray-600/30;
+}
+#buttons-menu button:active {
+  @apply bg-gray-600/60;
 }
 #menu svg {
   @apply w-10 h-10;

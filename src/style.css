@@ -11,5 +11,8 @@ body {
 }
 
 header {
-  @apply w-screen flex justify-around items-center h-fit p-6 font-knewave bg-blue-400 shadow-lg shadow-black;
+  @apply w-screen flex justify-center items-center h-fit p-6 font-knewave bg-blue-400 shadow-lg shadow-black;
+}
+header svg {
+  @apply absolute top-6 right-8;
 }

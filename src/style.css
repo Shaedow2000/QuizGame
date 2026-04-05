@@ -13,6 +13,13 @@ body {
 header {
   @apply w-screen flex justify-center items-center h-fit p-6 font-knewave bg-blue-400 shadow-lg shadow-black;
 }
+
 header svg {
-  @apply absolute top-6 right-8;
+  @apply transition-all absolute p-2 cursor-pointer top-5 right-6;
+}
+header svg:hover {
+  @apply bg-black/30 rounded-full;
+}
+header svg:active {
+  @apply bg-black/50;
 }

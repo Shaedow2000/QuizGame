@@ -13,4 +13,19 @@ function reset() {
   return;
 }
 
-export { getItem, reset };
+function redo() {
+  const wrong_quizes =
+    localStorage.getItem("wrong_quizes_indexes") !== undefined
+      ? localStorage.getItem("wrong_quizes_indexes")
+      : [];
+
+  localStorage.setItem("wrong", 0);
+
+  if (wrong_quizes.length === 0) {
+    return 0;
+  } else {
+    return wrong_quizes;
+  }
+}
+
+export { getItem, reset, redo };

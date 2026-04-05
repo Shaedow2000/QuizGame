@@ -46,6 +46,12 @@ main a:active {
 #menu-top-bar {
   @apply flex justify-between items-center p-5 bg-blue-500 rounded-3xl text-3xl;
 }
+#buttons-menu {
+  @apply flex flex-col justify-center items-center gap-6 mt-12;
+}
+#buttons-menu button {
+  @apply w-full h-fit p-4 flex justify-start items-center text-lg gap-6;
+}
 #menu svg {
   @apply w-10 h-10;
 }

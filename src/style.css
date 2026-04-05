@@ -41,7 +41,10 @@ main a:active {
 }
 
 #menu {
-  @apply w-screen h-screen absolute top-0 z-20 bg-blue-400 p-6;
+  @apply w-screen h-screen absolute top-0 z-20 bg-blue-400 p-6 font-dynapuff;
+}
+#menu-top-bar {
+  @apply flex justify-between items-center p-5 bg-blue-500 rounded-3xl text-3xl;
 }
 #menu svg {
   @apply w-10 h-10;

@@ -15,7 +15,7 @@ header {
 }
 
 header svg {
-  @apply transition-all absolute p-2 cursor-pointer top-5 right-6;
+  @apply transition-all w-14 h-14 absolute p-2 cursor-pointer top-4 right-5;
 }
 header svg:hover {
   @apply bg-black/30 rounded-full;

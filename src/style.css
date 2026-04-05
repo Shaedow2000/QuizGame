@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  @apply w-screen flex justify-center items-center h-fit p-6 font-knewave bg-blue-400 shadow-lg shadow-black;
+  @apply absolute top-0 w-screen flex justify-center items-center h-fit p-6 font-knewave bg-blue-400 shadow-lg shadow-black;
 }
 
 header svg {
@@ -22,4 +22,8 @@ header svg:hover {
 }
 header svg:active {
   @apply bg-black/50;
+}
+
+main {
+  @apply w-screen h-screen flex flex-col justify-center items-center gap-18 bg-linear-to-b from-yellow-200 via-green-600 to-blue-800;
 }

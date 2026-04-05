@@ -16,13 +16,16 @@ header {
   @apply absolute top-0 w-screen flex justify-center items-center h-fit p-6 font-knewave bg-blue-400 shadow-lg shadow-black;
 }
 
-header svg {
+header svg,
+#menu-top-bar svg {
   @apply transition-all w-14 h-14 absolute p-2 cursor-pointer top-4 right-5;
 }
-header svg:hover {
+header svg:hover,
+#menu-top-bar svg:hover {
   @apply bg-black/30 rounded-full;
 }
-header svg:active {
+header svg:active,
+#menu-top-bar svg:active {
   @apply bg-black/50;
 }
 
@@ -58,6 +61,9 @@ main a:active {
 #buttons-menu button:active {
   @apply bg-gray-600/60;
 }
-#menu svg {
+#buttons-menu svg {
   @apply w-10 h-10;
+}
+#menu-top-bar svg {
+  @apply static;
 }

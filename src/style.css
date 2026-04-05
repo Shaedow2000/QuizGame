@@ -12,8 +12,9 @@
   @apply transition-all duration-300;
 }
 
+html,
 body {
-  @apply w-screen h-screen;
+  @apply w-screen h-screen overflow-x-hidden relative;
 }
 
 header {

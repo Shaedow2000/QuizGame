@@ -8,6 +8,10 @@
   --font-dynapuff: "DynaPuff", system-ui;
 }
 
+* {
+  @apply transition-all duration-300;
+}
+
 body {
   @apply w-screen h-screen;
 }
@@ -18,7 +22,7 @@ header {
 
 header svg,
 #menu-top-bar svg {
-  @apply transition-all w-14 h-14 absolute p-2 cursor-pointer top-4 right-5;
+  @apply w-14 h-14 absolute p-2 cursor-pointer top-4 right-5;
 }
 header svg:hover,
 #menu-top-bar svg:hover {
@@ -34,7 +38,7 @@ main {
 }
 
 main a {
-  @apply transition-all cursor-pointer;
+  @apply cursor-pointer;
 }
 main a:hover {
   @apply -translate-y-1 shadow-lg;
@@ -53,7 +57,7 @@ main a:active {
   @apply flex flex-col justify-center items-center gap-6 mt-12;
 }
 #buttons-menu button {
-  @apply transition-all cursor-pointer rounded-3xl w-full h-fit p-4 flex justify-start items-center text-lg gap-6;
+  @apply cursor-pointer rounded-3xl w-full h-fit p-4 flex justify-start items-center text-lg gap-6;
 }
 #buttons-menu button:hover {
   @apply bg-gray-600/30;

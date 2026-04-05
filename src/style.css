@@ -12,6 +12,11 @@
   @apply transition-all duration-300;
 }
 
+::selection,
+::-moz-selection {
+  @apply bg-blue-950 text-white;
+}
+
 html,
 body {
   @apply w-screen h-screen overflow-x-hidden relative;

@@ -39,3 +39,10 @@ main a:hover {
 main a:active {
   @apply translate-y-1.5 shadow-sm;
 }
+
+#menu {
+  @apply w-screen h-screen absolute top-0 z-20 bg-blue-400 p-6;
+}
+#menu svg {
+  @apply w-10 h-10;
+}

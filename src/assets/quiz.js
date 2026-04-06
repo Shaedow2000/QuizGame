@@ -1,4 +1,4 @@
-const questions = [
+const quizes = [
   {
     question: "What does HTML stand for?",
     choices: [
@@ -126,3 +126,5 @@ const questions = [
     correct: 1,
   },
 ];
+
+export default quizes;

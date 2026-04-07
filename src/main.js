@@ -4,6 +4,9 @@ const shadow = document.getElementById("shadow");
 const open_menu_button = document.getElementById("menu-button");
 const close_menu_button = document.getElementById("close-menu");
 
+const choice_buttons = document.querySelectorAll(".choice-button");
+const next_button = document.getElementById("next-quiz");
+
 open_menu_button.addEventListener("click", () => {
   menu.style.right = "0px";
   shadow.style.display = "block";
@@ -15,3 +18,11 @@ close_menu_button.addEventListener("click", () => {
   shadow.style.display = "none";
   shadow.style.visibility = "invisible";
 });
+
+for (let i = 0; i < choice_buttons.length; i++) {
+  let choice_button = choice_buttons[i];
+
+  choice_button.addEventListener("click", () => {
+    next_button.style.display = "block";
+  });
+}

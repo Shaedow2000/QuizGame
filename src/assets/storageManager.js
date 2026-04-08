@@ -7,8 +7,8 @@ function setStorageItems() {
 
   localStorage.getItem("wrong") ?? localStorage.setItem("wrong", 0);
 
-  localStorage.getItem("wrong_quizes_indexes") === null ||
-    localStorage.setItem("wrong_quizes_indexes", []);
+  localStorage.getItem("wrong_quizes_indexes") ??
+    localStorage.setItem("wrong_quizes_indexes", JSON.stringify([]));
 }
 
 function getItem(name) {

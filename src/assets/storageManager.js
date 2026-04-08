@@ -1,3 +1,16 @@
+function setStorageItems() {
+  console.log("yes");
+
+  localStorage.getItem("current") ?? localStorage.setItem("current", 0);
+
+  localStorage.getItem("correct") ?? localStorage.setItem("correct", 0);
+
+  localStorage.getItem("wrong") ?? localStorage.setItem("wrong", 0);
+
+  localStorage.getItem("wrong_quizes_indexes") === null ||
+    localStorage.setItem("wrong_quizes_indexes", []);
+}
+
 function getItem(name) {
   return localStorage.getItem(name) !== undefined
     ? localStorage.getItem(name)
@@ -28,4 +41,4 @@ function redo() {
   }
 }
 
-export { getItem, reset, redo };
+export { getItem, reset, redo, setStorageItems };

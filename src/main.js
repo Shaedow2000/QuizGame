@@ -1,3 +1,7 @@
+import { setStorageItems } from "./assets/storageManager";
+
+setStorageItems();
+
 const menu = document.getElementById("menu");
 const shadow = document.getElementById("shadow");
 

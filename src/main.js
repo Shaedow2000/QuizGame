@@ -1,3 +1,4 @@
+import load_quiz from "./assets/quizLoader";
 import { redo, reset, setStorageItems } from "./assets/storageManager";
 
 setStorageItems();
@@ -41,4 +42,6 @@ redo_button.addEventListener("click", () => redo());
 next_button.addEventListener("click", () => {
   let current = +localStorage.getItem("current");
   localStorage.setItem("current", ++current);
+
+  load_quiz();
 });

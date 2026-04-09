@@ -44,4 +44,8 @@ next_button.addEventListener("click", () => {
   localStorage.setItem("current", ++current);
 
   load_quiz();
+
+  choice_buttons.forEach((button) => button.classList.remove("clicked"));
+
+  next_button.style.display = "none";
 });

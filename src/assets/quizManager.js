@@ -2,8 +2,8 @@ import quizes from "./quiz.js";
 
 const choice_buttons = document.querySelectorAll(".choice-button");
 
-const current_quiz = localStorage.getItem("current");
-const correct_choice = quizes[current_quiz].correct;
+let current_quiz = localStorage.getItem("current");
+let correct_choice = quizes[current_quiz].correct;
 
 for (let i = 0; i < choice_buttons.length; i++) {
   let choice_button = choice_buttons[i];
@@ -38,5 +38,8 @@ for (let i = 0; i < choice_buttons.length; i++) {
     done.push(current_quiz);
 
     localStorage.setItem("done", JSON.stringify(done));
+
+    current_quiz++;
+    correct_choice = quizes[current_quiz].correct;
   });
 }

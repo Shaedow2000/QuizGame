@@ -2,7 +2,7 @@ import quizes from "./quiz.js";
 
 const choice_buttons = document.querySelectorAll(".choice-button");
 
-let current_quiz = localStorage.getItem("current");
+let current_quiz = +localStorage.getItem("current");
 let correct_choice = quizes[current_quiz].correct;
 
 for (let i = 0; i < choice_buttons.length; i++) {

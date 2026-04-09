@@ -2,6 +2,9 @@ import { setStorageItems } from "./assets/storageManager";
 
 setStorageItems();
 
+const correct_score = document.getElementById("correct-score");
+const wrong_score = document.getElementById("wrong-score");
+
 const menu = document.getElementById("menu");
 const shadow = document.getElementById("shadow");
 
@@ -30,3 +33,6 @@ for (let i = 0; i < choice_buttons.length; i++) {
     next_button.style.display = "block";
   });
 }
+
+correct_score.innerHTML = localStorage.getItem("correct");
+wrong_score.innerHTML = localStorage.getItem("wrong");

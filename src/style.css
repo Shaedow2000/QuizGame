@@ -79,11 +79,18 @@ main a:active {
 }
 
 #quiz-section div div button {
-  @apply w-full h-fit p-3 rounded-3xl bg-red-900 shadow-md shadow-black text-lg text-white cursor-pointer;
+  @apply w-full h-fit p-3 rounded-3xl shadow-md shadow-black text-lg text-white cursor-pointer;
 }
 #quiz-section div div button:hover {
   @apply shadow-lg -translate-y-1;
 }
 #quiz-section div div button:active {
   @apply shadow-sm translate-y-1.5;
+}
+
+.correct {
+  @apply bg-green-600 text-black border-4 border-green-900;
+}
+.wrong {
+  @apply bg-red-600 text-black border-4 border-red-900;
 }

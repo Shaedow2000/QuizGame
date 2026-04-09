@@ -32,6 +32,11 @@ for (let i = 0; i < choice_buttons.length; i++) {
       );
     }
 
+    choice_buttons.forEach((button) =>
+      button.id.includes(correct_choice + 1)
+        ? button.classList.add("correct")
+        : button.classList.add("wrong"),
+    );
     choice_buttons.forEach((button) => button.classList.add("clicked"));
 
     let done = JSON.parse(localStorage.getItem("done"));

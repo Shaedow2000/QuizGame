@@ -25,6 +25,8 @@ function reset() {
   localStorage.setItem("wrong_quizes_indexes", JSON.stringify([]));
   localStorage.setItem("done", JSON.stringify([]));
 
+  location.reload();
+
   return;
 }
 
@@ -37,6 +39,8 @@ function redo() {
   localStorage.setItem("wrong", 0);
   localStorage.setItem("wrong_quizes_indexes", JSON.stringify([]));
   localStorage.setItem("done", JSON.stringify(done));
+
+  location.reload();
 
   return wrong_quizes;
 }

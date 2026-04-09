@@ -1,6 +1,6 @@
 import quizes from "./quiz.js";
 
-export default function load_quiz() {
+function load_quiz() {
   let quizId = localStorage.getItem("current");
   let quizQuestion = quizes[quizId].question;
   let [choice1, choice2, choice3, choice4] = quizes[quizId].choices;
@@ -21,3 +21,5 @@ export default function load_quiz() {
 }
 
 load_quiz();
+
+export default load_quiz;

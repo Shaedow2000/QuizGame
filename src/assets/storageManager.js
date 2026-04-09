@@ -40,4 +40,4 @@ function redo() {
   return wrong_quizes;
 }
 
-export { getItem, reset, redo, setStorageItems };
+export { reset, redo, setStorageItems };

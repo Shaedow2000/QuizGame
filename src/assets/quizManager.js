@@ -1,4 +1,4 @@
-import quizes from "./quiz";
+import quizes from "./quiz.js";
 
 const choice_buttons = document.querySelectorAll(".choice-button");
 

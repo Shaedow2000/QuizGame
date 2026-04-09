@@ -20,6 +20,4 @@ function load_quiz() {
   choice4_button.innerHTML = choice4;
 }
 
-load_quiz();
-
 export default load_quiz;

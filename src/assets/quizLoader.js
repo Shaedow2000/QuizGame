@@ -1,9 +1,6 @@
 import quizes from "./quiz.js";
 
-let quizId =
-  localStorage.getItem("current") !== null
-    ? localStorage.getItem("current")
-    : 0;
+let quizId = localStorage.getItem("current");
 let quizQuestion = quizes[quizId].question;
 let [choice1, choice2, choice3, choice4] = quizes[quizId].choices;
 

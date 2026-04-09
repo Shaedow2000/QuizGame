@@ -12,9 +12,7 @@ function setStorageItems() {
 }
 
 function getItem(name) {
-  return localStorage.getItem(name) !== undefined
-    ? localStorage.getItem(name)
-    : 0;
+  return localStorage.getItem(name);
 }
 
 function reset() {
@@ -27,10 +25,7 @@ function reset() {
 }
 
 function redo() {
-  const wrong_quizes =
-    localStorage.getItem("wrong_quizes_indexes") !== undefined
-      ? localStorage.getItem("wrong_quizes_indexes")
-      : [];
+  const wrong_quizes = localStorage.getItem("wrong_quizes_indexes");
 
   localStorage.setItem("wrong", 0);
 

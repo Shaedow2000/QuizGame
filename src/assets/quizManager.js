@@ -2,10 +2,7 @@ import quizes from "./quiz";
 
 const choice_buttons = document.querySelectorAll(".choice-button");
 
-const current_quiz =
-  localStorage.getItem("current") !== null
-    ? localStorage.getItem("current")
-    : 0;
+const current_quiz = localStorage.getItem("current");
 const correct_choice = quizes[current_quiz].correct;
 
 for (let i = 0; i < choice_buttons.length; i++) {
@@ -13,22 +10,13 @@ for (let i = 0; i < choice_buttons.length; i++) {
 
   choice_button.addEventListener("click", () => {
     if (choice_button.id.includes(correct_choice + 1)) {
-      let correct_score =
-        localStorage.getItem("correct") !== null
-          ? localStorage.getItem("correct")
-          : 0;
+      let correct_score = localStorage.getItem("correct");
       localStorage.setItem("correct", correct_score++);
     } else {
-      let wrong_score =
-        localStorage.getItem("wrong") !== null
-          ? localStorage.getItem("wrong")
-          : 0;
+      let wrong_score = localStorage.getItem("wrong");
       localStorage.setItem("wrong", wrong_score++);
 
-      let wrong_quizes_indexes =
-        localStorage.getItem("wrong_quizes_indexes") !== null
-          ? JSON.parse(localStorage.getItem("wrong_quizes_indexes"))
-          : [];
+      let wrong_quizes_indexes = localStorage.getItem("wrong_quizes_indexes");
       console.log(wrong_quizes_indexes);
       localStorage.setItem(
         "wrong_quizes_indexes",

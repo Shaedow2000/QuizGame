@@ -1,6 +1,4 @@
 function setStorageItems() {
-  console.log("yes");
-
   localStorage.getItem("current") ?? localStorage.setItem("current", 0);
 
   localStorage.getItem("correct") ?? localStorage.setItem("correct", 0);
@@ -12,10 +10,6 @@ function setStorageItems() {
 
   localStorage.getItem("done") ??
     localStorage.setItem("done", JSON.stringify([]));
-}
-
-function getItem(name) {
-  return localStorage.getItem(name);
 }
 
 function reset() {

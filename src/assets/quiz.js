@@ -52,7 +52,7 @@ const quizes = [
   },
   {
     question: "Which HTML tag is used for the largest heading?",
-    choices: ["<h6>", "<heading>", "<h3>", "<h1>"],
+    choices: ["h6 tag", "heading tag", "h3 tag", "h1 tag"],
     correct: 3,
   },
   {

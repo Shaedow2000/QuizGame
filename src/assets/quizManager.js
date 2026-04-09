@@ -9,6 +9,10 @@ for (let i = 0; i < choice_buttons.length; i++) {
   let choice_button = choice_buttons[i];
 
   choice_button.addEventListener("click", () => {
+    if (choice_button.classList.contains("clicked")) {
+      return;
+    }
+
     if (choice_button.id.includes(correct_choice + 1)) {
       let correct_score = localStorage.getItem("correct");
       localStorage.setItem("correct", correct_score++);
@@ -23,5 +27,7 @@ for (let i = 0; i < choice_buttons.length; i++) {
         JSON.stringify(wrong_quizes_indexes.push(current_quiz)),
       );
     }
+
+    choice_buttons.forEach((button) => button.classList.add("clicked"));
   });
 }

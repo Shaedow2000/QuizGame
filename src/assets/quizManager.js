@@ -33,5 +33,10 @@ for (let i = 0; i < choice_buttons.length; i++) {
     }
 
     choice_buttons.forEach((button) => button.classList.add("clicked"));
+
+    let done = JSON.parse(localStorage.getItem("done"));
+    done.push(current_quiz);
+
+    localStorage.setItem("done", JSON.stringify(done));
   });
 }

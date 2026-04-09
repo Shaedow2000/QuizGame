@@ -39,6 +39,7 @@ function redo() {
   localStorage.setItem("wrong", 0);
   localStorage.setItem("wrong_quizes_indexes", JSON.stringify([]));
   localStorage.setItem("done", JSON.stringify(done));
+  localStorage.setItem("current", 0);
 
   location.reload();
 

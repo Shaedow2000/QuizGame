@@ -16,7 +16,7 @@ const quizes = [
   },
   {
     question: "Which HTML tag is used to link a CSS file?",
-    choices: ["<style>", "<css>", "<link>", "<script>"],
+    choices: ["style tag", "css tag", "link tag", "script tag"],
     correct: 2,
   },
   {

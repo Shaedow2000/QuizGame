@@ -38,11 +38,7 @@ function redo() {
   localStorage.setItem("wrong_quizes_indexes", JSON.stringify([]));
   localStorage.setItem("done", JSON.stringify(done));
 
-  if (wrong_quizes.length === 0) {
-    return [];
-  } else {
-    return wrong_quizes;
-  }
+  return wrong_quizes;
 }
 
 export { getItem, reset, redo, setStorageItems };

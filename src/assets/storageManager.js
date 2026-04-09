@@ -29,12 +29,17 @@ function reset() {
 }
 
 function redo() {
-  const wrong_quizes = localStorage.getItem("wrong_quizes_indexes");
+  const wrong_quizes = JSON.parse(localStorage.getItem("wrong_quizes_indexes"));
+  let done = JSON.parse(localStorage.getItem("done"));
+
+  done = done.filter((index) => !wrong_quizes.includes(index));
 
   localStorage.setItem("wrong", 0);
+  localStorage.setItem("wrong_quizes_indexes", JSON.stringgify([]));
+  localStorage.setItem("done", JSON.stringify(done));
 
   if (wrong_quizes.length === 0) {
-    return 0;
+    return [];
   } else {
     return wrong_quizes;
   }

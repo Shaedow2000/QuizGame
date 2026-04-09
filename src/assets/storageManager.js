@@ -22,7 +22,8 @@ function reset() {
   localStorage.setItem("current", 0);
   localStorage.setItem("correct", 0);
   localStorage.setItem("wrong", 0);
-  localStorage.setItem("wrong_quizes_indexes", []);
+  localStorage.setItem("wrong_quizes_indexes", JSON.stringify([]));
+  localStorage.setItem("done", JSON.stringify([]));
 
   return;
 }

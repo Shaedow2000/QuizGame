@@ -1,4 +1,4 @@
-import { reset, setStorageItems } from "./assets/storageManager";
+import { redo, reset, setStorageItems } from "./assets/storageManager";
 
 setStorageItems();
 
@@ -15,6 +15,7 @@ const choice_buttons = document.querySelectorAll(".choice-button");
 const next_button = document.getElementById("next-quiz");
 
 const reset_button = document.getElementById("reset");
+const redo_button = document.getElementById("redo");
 
 open_menu_button.addEventListener("click", () => {
   menu.style.right = "0px";
@@ -41,4 +42,8 @@ wrong_score.innerHTML = localStorage.getItem("wrong");
 
 reset_button.addEventListener("click", () => {
   reset();
+});
+
+redo_button.addEventListener("click", () => {
+  redo();
 });

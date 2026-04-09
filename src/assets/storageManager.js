@@ -35,7 +35,7 @@ function redo() {
   done = done.filter((index) => !wrong_quizes.includes(index));
 
   localStorage.setItem("wrong", 0);
-  localStorage.setItem("wrong_quizes_indexes", JSON.stringgify([]));
+  localStorage.setItem("wrong_quizes_indexes", JSON.stringify([]));
   localStorage.setItem("done", JSON.stringify(done));
 
   if (wrong_quizes.length === 0) {

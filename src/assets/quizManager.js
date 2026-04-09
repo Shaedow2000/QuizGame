@@ -14,17 +14,21 @@ for (let i = 0; i < choice_buttons.length; i++) {
     }
 
     if (choice_button.id.includes(correct_choice + 1)) {
-      let correct_score = localStorage.getItem("correct");
-      localStorage.setItem("correct", correct_score++);
+      let correct_score = +localStorage.getItem("correct");
+      localStorage.setItem("correct", ++correct_score);
     } else {
-      let wrong_score = localStorage.getItem("wrong");
-      localStorage.setItem("wrong", wrong_score++);
+      let wrong_score = +localStorage.getItem("wrong");
+      localStorage.setItem("wrong", ++wrong_score);
 
-      let wrong_quizes_indexes = localStorage.getItem("wrong_quizes_indexes");
-      console.log(wrong_quizes_indexes);
+      let wrong_quizes_indexes = JSON.parse(
+        localStorage.getItem("wrong_quizes_indexes"),
+      );
+
+      wrong_quizes_indexes.push(current_quiz);
+
       localStorage.setItem(
         "wrong_quizes_indexes",
-        JSON.stringify(wrong_quizes_indexes.push(current_quiz)),
+        JSON.stringify(wrong_quizes_indexes),
       );
     }
 

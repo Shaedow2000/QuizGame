@@ -9,6 +9,9 @@ function setStorageItems() {
 
   localStorage.getItem("wrong_quizes_indexes") ??
     localStorage.setItem("wrong_quizes_indexes", JSON.stringify([]));
+
+  localStorage.getItem("done") ??
+    localStorage.setItem("done", JSON.stringify([]));
 }
 
 function getItem(name) {

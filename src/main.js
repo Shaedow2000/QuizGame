@@ -56,4 +56,7 @@ next_button?.addEventListener("click", () => {
   choice_buttons.forEach((button) => button.classList.remove("clicked"));
 
   next_button.style.display = "none";
+  choice_buttons.forEach((button) =>
+    button.classList.remove("correct", "wrong"),
+  );
 });

@@ -1,7 +1,8 @@
 import quizes from "./quiz.js";
 
-function getUndoneQuiz(quizId) {
+function getUndoneQuiz() {
   const doneQuizes = JSON.parse(localStorage.getItem("done"));
+  let quizId = 0;
 
   for (let i = 0; i < doneQuizes.length; i++) {
     if (+quizId === doneQuizes[i]) {
@@ -15,7 +16,7 @@ function getUndoneQuiz(quizId) {
 }
 
 function load_quiz() {
-  let quizId = getUndoneQuiz(localStorage.getItem("current"));
+  let quizId = getUndoneQuiz();
   let quizQuestion = quizes[quizId].question;
   let [choice1, choice2, choice3, choice4] = quizes[quizId].choices;
 

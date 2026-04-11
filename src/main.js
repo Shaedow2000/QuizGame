@@ -1,4 +1,4 @@
-import load_quiz from "./assets/quizLoader.js";
+import { load_quiz } from "./assets/quizLoader.js";
 import { redo, reset, setStorageItems } from "./assets/storageManager.js";
 
 setStorageItems();

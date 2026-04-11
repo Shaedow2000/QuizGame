@@ -1,7 +1,21 @@
 import quizes from "./quiz.js";
 
+function getUndoneQuiz(quizId) {
+  const doneQuizes = JSON.parse(localStorage.getItem("done"));
+
+  for (let i = 0; i < doneQuizes.length; i++) {
+    if (+quizId === doneQuizes[i]) {
+      quizId++;
+    }
+  }
+
+  localStorage.setItem("current", quizId);
+
+  return quizId;
+}
+
 function load_quiz() {
-  let quizId = localStorage.getItem("current");
+  let quizId = getUndoneQuiz(localStorage.getItem("current"));
   let quizQuestion = quizes[quizId].question;
   let [choice1, choice2, choice3, choice4] = quizes[quizId].choices;
 
@@ -20,4 +34,4 @@ function load_quiz() {
   choice4_button.innerHTML = choice4;
 }
 
-export default load_quiz;
+export { load_quiz, getUndoneQuiz };

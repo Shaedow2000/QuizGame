@@ -15,6 +15,14 @@ const next_button = document.getElementById("next-quiz");
 const reset_button = document.getElementById("reset");
 const redo_button = document.getElementById("redo");
 
+const correct_score = document.getElementById("correct-score");
+const wrong_score = document.getElementById("wrong-score");
+
+console.log("working");
+
+correct_score.innerHTML = +localStorage.getItem("correct");
+wrong_score.innerHTML = +localStorage.getItem("wrong");
+
 open_menu_button.addEventListener("click", () => {
   menu.style.right = "0px";
   shadow.style.display = "block";

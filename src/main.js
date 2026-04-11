@@ -18,10 +18,10 @@ const redo_button = document.getElementById("redo");
 const correct_score = document.getElementById("correct-score");
 const wrong_score = document.getElementById("wrong-score");
 
-console.log("working");
-
-correct_score.innerHTML = +localStorage.getItem("correct");
-wrong_score.innerHTML = +localStorage.getItem("wrong");
+if (correct_score && wrong_score) {
+  correct_score.innerHTML = +localStorage.getItem("correct");
+  wrong_score.innerHTML = +localStorage.getItem("wrong");
+}
 
 open_menu_button.addEventListener("click", () => {
   menu.style.right = "0px";

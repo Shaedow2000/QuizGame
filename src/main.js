@@ -39,7 +39,7 @@ reset_button.addEventListener("click", () => reset());
 
 redo_button.addEventListener("click", () => redo());
 
-next_button.addEventListener("click", () => {
+next_button?.addEventListener("click", () => {
   let current = +localStorage.getItem("current");
   localStorage.setItem("current", ++current);
 

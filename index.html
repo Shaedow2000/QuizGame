@@ -10,8 +10,8 @@
       const correct_score = document.getElementById("correct-score");
       const wrong_score = document.getElementById("wrong-score");
 
-      correct_score.innerHTML = localStorage.getItem("correct");
-      wrong_score.innerHTML = localStorage.getItem("wrong");
+      correct_score?.innerHTML = +localStorage.getItem("correct");
+      wrong_score?.innerHTML = +localStorage.getItem("wrong");
     </script>
   </head>
   <body>

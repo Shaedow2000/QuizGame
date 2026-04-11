@@ -4,6 +4,8 @@ function getUndoneQuiz() {
   const doneQuizes = JSON.parse(localStorage.getItem("done"));
   let quizId = 0;
 
+  doneQuizes.sort((a, b) => a - b);
+
   for (let i = 0; i < doneQuizes.length; i++) {
     if (+quizId === doneQuizes[i]) {
       quizId++;

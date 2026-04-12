@@ -21,7 +21,7 @@ function load_quiz() {
   let quizId = getUndoneQuiz();
 
   if (quizId > 19) {
-    location.href = "/completed";
+    location.href = import.meta.env.BASE_URL + "/completed";
     return;
   }
 

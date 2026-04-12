@@ -102,7 +102,7 @@ const quizes = [
   },
   {
     question: "What is the correct way to write a comment in HTML?",
-    choices: ["// comment", "/* comment */", "<!-- comment -->", "# comment"],
+    choices: ["// comment", "/* comment */", "< !-- comment -- >", "# comment"],
     correct: 2,
   },
   {

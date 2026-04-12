@@ -46,7 +46,7 @@ for (let i = 0; i < choice_buttons.length; i++) {
 
     localStorage.setItem("done", JSON.stringify(done));
 
-    current_quiz++;
+    current_quiz = getUndoneQuiz();
     correct_choice = quizes[current_quiz].correct;
     localStorage.setItem("current", current_quiz);
   });

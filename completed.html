@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Main Page</title>
+    <title></title>
     <link href="src/style.css" rel="stylesheet" />
     <script src="src/main.js" type="module" defer></script>
   </head>
@@ -23,18 +23,12 @@
       </svg>
     </header>
     <main>
-      <h1 class="text-3xl md:text-5xl">Start solving!</h1>
+      <h1 class="text-5xl font-bold">You've completed all the quizes !!</h1>
       <a
-        href="/quiz"
+        href="/"
         class="text-2xl md:text-3xl text-white py-4 px-8 bg-red-900 rounded-4xl shadow-md shadow-black"
+        >Go back to main page</a
       >
-        Play
-      </a>
-      <div class="flex flex-col justify-center items-center gap-1">
-        <h3 class="mb-2 text-xl">Score:</h3>
-        <p>correct: <span id="correct-score"></span></p>
-        <p>wrong: <span id="wrong-score"></span></p>
-      </div>
     </main>
     <section
       id="shadow"

@@ -19,6 +19,12 @@ function getUndoneQuiz() {
 
 function load_quiz() {
   let quizId = getUndoneQuiz();
+
+  if (quizId > 19) {
+    location.href = "/completed";
+    return;
+  }
+
   let quizQuestion = quizes[quizId].question;
   let [choice1, choice2, choice3, choice4] = quizes[quizId].choices;
 

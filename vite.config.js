@@ -9,6 +9,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         quiz: resolve(__dirname, "quiz.html"),
+        complete: resolve(__dirname, "complete.html"),
       },
     },
   },

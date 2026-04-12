@@ -23,12 +23,12 @@ body {
 }
 
 header {
-  @apply absolute top-0 w-screen flex justify-center items-center h-fit p-6 font-knewave bg-blue-400 shadow-lg shadow-black;
+  @apply absolute top-0 w-screen flex justify-center items-center h-fit p-4 md:p-6 font-knewave bg-blue-400 shadow-lg shadow-black;
 }
 
 header svg,
 #menu-top-bar svg {
-  @apply w-14 h-14 absolute p-2 cursor-pointer top-4 right-5;
+  @apply w-14 h-14 absolute p-2 cursor-pointer top-2 md:top-4 right-3 sm:right-5;
 }
 header svg:hover,
 #menu-top-bar svg:hover {
@@ -40,7 +40,7 @@ header svg:active,
 }
 
 main {
-  @apply p-6 text-center text-wrap font-dynapuff w-screen h-screen flex flex-col justify-center items-center gap-18 bg-linear-to-b from-yellow-200 via-green-600 to-blue-800;
+  @apply px-3 pt-12 sm:pt-6 md:pt-0 text-center text-wrap font-dynapuff w-screen h-screen flex flex-col justify-center items-center gap-6 md:gap-18 bg-linear-to-b from-yellow-200 via-green-600 to-blue-800;
 }
 
 main a {
@@ -79,7 +79,7 @@ main a:active {
 }
 
 #quiz-section div div button {
-  @apply w-full h-fit p-3 rounded-3xl shadow-md shadow-black text-lg text-white cursor-pointer;
+  @apply text-sm md:text-lg w-full h-fit p-3 rounded-3xl shadow-md shadow-black text-white cursor-pointer;
 }
 #quiz-section div div button:hover {
   @apply shadow-lg -translate-y-1;

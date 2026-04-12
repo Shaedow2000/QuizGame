@@ -5,11 +5,11 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [tailwindcss()],
   build: {
-    rolldownOptions: {
+    rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
         quiz: resolve(__dirname, "quiz.html"),
-        complete: resolve(__dirname, "complete.html"),
+        complete: resolve(__dirname, "completed.html"),
       },
     },
   },
